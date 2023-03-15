@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <title>SamTravel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pricing.css">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">Sam Travel</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="1.html">Home</a></li>
+                        <li><a href="#">Our Buses</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <div class="background">
+          <div class="container">
+            <div class="panel pricing-table">
+              
+              <div class="pricing-plan">
+                <img src="images/600.png" alt="" class="pricing-img">
+                <h2 class="pricing-header">Mercedes 600 New</h2>
+                <ul class="pricing-features">
+                  <li class="pricing-features-item">2022</li>
+                  <li class="pricing-features-item">50 Chair</li>
+                </ul>
+                <span class="pricing-price">5000 L.E</span>
+                <a href="#/" class="pricing-button">Book</a>
+              </div>
+              
+              <div class="pricing-plan">
+                <img src="images/660.png" alt="" class="pricing-img">
+                <h2 class="pricing-header">Mercedes 600</h2>
+                <ul class="pricing-features">
+                  <li class="pricing-features-item">2015</li>
+                  <li class="pricing-features-item">50 Chair</li>
+                </ul>
+                <span class="pricing-price">4000 L.E</span>
+                <a href="#/" class="pricing-button is-featured">Book</a>
+              </div>
+              
+              <div class="pricing-plan">
+                <img src="images/500.png" alt="" class="pricing-img">
+                <h2 class="pricing-header">Mercedes 500</h2>
+                <ul class="pricing-features">
+                  <li class="pricing-features-item">2010</li>
+                  <li class="pricing-features-item">Chair</li>
+                </ul>
+                <span class="pricing-price">3000 L.E</span>
+                <a href="#/" class="pricing-button">Book</a>
+              </div>
+              <!---------->
+            </div>
+          </div>
+        </div>
+
+      
+    
+    <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
+    
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+  </body>
+</html>
